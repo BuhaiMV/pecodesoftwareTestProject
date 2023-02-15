@@ -1,0 +1,23 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@babel/core": "^7.20.12",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/register": "^7.18.9",
+        "@wdio/allure-reporter": "^8.3.5",
+        "@wdio/cli": "^8.3.5",
+        "@wdio/local-runner": "^8.3.5",
+        "@wdio/mocha-framework": "^8.3.0",
+        "@wdio/selenium-standalone-service": "^8.3.2",
+        "@wdio/spec-reporter": "^8.3.0"
+    },
+    "scripts": {
+        "testSuite": "wdio run wdio.conf.js",
+        "login": "wdio run wdio.conf.js --suit test/specs/registerlogin"
+    },
+    "dependencies": {
+        "allure-commandline": "^2.21.0"
+    }
+}
